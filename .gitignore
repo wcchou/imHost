@@ -1,0 +1,5 @@
+.vs
+imHost/imHost/x64
+imHost/x64/Debug
+
+*.vcxproj.user
