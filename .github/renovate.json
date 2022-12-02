@@ -13,7 +13,7 @@
   ],
   "packageRules": [
     {
-      "matchPackageNames": ["*imLib$"],
+      "matchPackagePattern": ["*imLib$"],
       "versioning": "nuget"
     }
   ]
