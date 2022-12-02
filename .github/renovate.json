@@ -9,8 +9,7 @@
       "matchStrings": ["\"(?<packageName>[\\w]+)\":[\\s\\w\\{]+\"version\":[\\s\"]+(?<currentValue>\\d+.\\d+.\\d+.\\d+)\",\\s+\"path\":\\s+\"(?<depName>[\\w\\/]+)\""],
       "datasourceTemplate": "github-tags",
       "extractVersionTemplate": "nuget",
-      "packageNameTemplate": "{{{depName}}}",
-      "registryUrlTemplate": "https://github.com/"
+      "packageNameTemplate": "{{{depName}}}"
     }
   ],
   "packageRules": [
