@@ -7,7 +7,7 @@
     {
       "fileMatch": ["^client-module\\.json$"],
       "matchStrings": ["\"([\\w]+)\":[\\s\\w\\{]+\"version\":[\\s\"]+(?<currentValue>\\d+.\\d+.\\d+.\\d+)\",\\s+\"path\":\\s+\"(?<depName>[\\w\\/]+)\""],
-      "datasourceTemplate": "github-releases",
+      "datasourceTemplate": "github-tags",
       "extractVersionTemplate": "nuget",
       "packageNameTemplate": "{{{depName}}}"
     }
