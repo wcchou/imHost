@@ -6,7 +6,7 @@
   "regexManagers": [
     {
       "fileMatch": ["^client-module\\.json$"],
-      "matchStrings": ["\"(?<packageName>[\\w]+)\":[\\s\\w\\{]+\"version\":[\\s\"]+(?<currentValue>\\d+.\\d+.\\d+.\\d+)\",\\s+\"path\":\\s+\"(?<depName>\\w+)\""],
+      "matchStrings": ["\"(?<packageName>[\\w]+)\":[\\s\\w\\{]+\"version\":[\\s\"]+(?<currentValue>\\d+.\\d+.\\d+.\\d+)\",\\s+\"path\":\\s+\"(?<depName>[\\w\\/]+)\""],
       "datasourceTemplate": "github-tags",
       "extractVersionTemplate": "nuget"
     }
