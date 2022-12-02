@@ -10,5 +10,11 @@
       "datasourceTemplate": "github-tags",
       "extractVersionTemplate": "nuget"
     }
+  ],
+  "packageRules": [
+    {
+      "matchPackageNames": ["epdlp"],
+      "versioning": "regex:^(?<major>\\d+)(\\.(?<minor>\\d+))(\\.(?<patch>\\d+))(\\.(?<build>d+))$"
+    }
   ]
 }
