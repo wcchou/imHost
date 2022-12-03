@@ -8,14 +8,14 @@
       "fileMatch": ["^client-module\\.json$"],
       "matchStrings": ["\"([\\w]+)\":[\\s\\w\\{]+\"version\":[\\s\"]+(?<currentValue>\\d+.\\d+.\\d+.\\d+)\",\\s+\"path\":\\s+\"(?<depName>[\\w\\/]+)\""],
       "datasourceTemplate": "github-tags",
-      "extractVersionTemplate": "nuget",
+      "extractVersionTemplate": "loose",
       "packageNameTemplate": "{{{depName}}}"
     }
   ],
   "packageRules": [
     {
       "matchPackagePatterns": ["[\\w\\/]+imLib$"],
-      "versioning": "nuget"
+      "versioning": "loose"
     }
   ]
 }
