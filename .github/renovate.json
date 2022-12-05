@@ -14,7 +14,7 @@
       "datasourceTemplate": "github-tags",
       "extractVersionTemplate": "loose",
       "packageNameTemplate": "wcchou/imLib",
-      "depNameTemplate": "https://github.com/imLib"
+      "depNameTemplate": "https://github.com/wcchou/imLib"
     }
   ],
   "packageRules": [
