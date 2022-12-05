@@ -9,7 +9,7 @@
         "^client-module\\.json$"
       ],
       "matchStrings": [
-        "*"
+        "(?<currentValue>\\d+.\\d+.\\d+.\\d+)"
       ],
       "datasourceTemplate": "github-tags",
       "extractVersionTemplate": "loose",
