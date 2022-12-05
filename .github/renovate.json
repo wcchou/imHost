@@ -5,17 +5,27 @@
   ],
   "regexManagers": [
     {
-      "fileMatch": ["^client-module\\.json$"],
-      "matchStrings": ["\"([\\w]+)\":[\\s\\w\\{]+\"version\":[\\s\"]+(?<currentValue>\\d+.\\d+.\\d+.\\d+)\",\\s+\"path\":\\s+\"(?<depName>[\\w\\/]+)\""],
+      "fileMatch": [
+        "^client-module\\.json$"
+      ],
+      "matchStrings": [
+        "\"([\\w]+)\":[\\s\\w\\{]+\"version\":[\\s\"]+(?<currentValue>\\d+.\\d+.\\d+.\\d+)\",\\s+\"path\":\\s+\"(?<depName>[\\w\\/]+)\""
+      ],
       "datasourceTemplate": "github-tags",
       "extractVersionTemplate": "loose",
-      "packageNameTemplate": "{{{depName}}}"
+      "packageNameTemplate": "{{{depName}}}",
+      "depNameTemplate": "https://github.com/{{{depName}}}"
     }
   ],
   "packageRules": [
     {
       "matchPackagePatterns": ["[\\w\\/]+imLib$"],
-      "versioning": "loose"
+      "versioning": "loose",
+      "automerge": true,
+      "platformAutomerge": true,
+      "stabilityDays": 0,
+      "prCreation": "immediate",
+      "prPriority": 1000
     }
   ]
 }
