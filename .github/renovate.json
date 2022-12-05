@@ -12,14 +12,15 @@
         "(?<currentValue>\\d+.\\d+.\\d+.\\d+)"
       ],
       "datasourceTemplate": "github-tags",
-      "extractVersionTemplate": "loose",
+      "extractVersionTemplate": "nuget",
+      "packageNameTemplate": "wcchou/imLib",
       "depNameTemplate": "https://github.com/wcchou/imLib"
     }
   ],
   "packageRules": [
     {
       "matchPackagePatterns": ["[\\w\\/]+imLib$"],
-      "versioning": "loose",
+      "versioning": "nuget",
       "automerge": true,
       "platformAutomerge": true,
       "stabilityDays": 0,
