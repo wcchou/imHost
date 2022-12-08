@@ -11,7 +11,7 @@
       "matchStrings": [
        "\"([\\w]+)\":[\\s\\w\\{]+\"version\":[\\s\"]+(?<currentValue>\\d+.\\d+.\\d+.\\d+)\",\\s+\"path\":\\s+\"(?<depName>[\\w\\/]+)\"" 
       ],
-      "extractVersionTemplate": "(?<major>\\d+).(?<minor>\\d+).(?<patch>\\d+).(?<build>\\d+)",
+      "extractVersionTemplate": "regex:(?<major>\\d+).(?<minor>\\d+).(?<patch>\\d+).(?<build>\\d+)",
       "datasourceTemplate": "github-tags",
       "packageNameTemplate": "{{{depName}}}",
       "depNameTemplate": "https://github.com/{{{depName}}}"
@@ -20,7 +20,7 @@
   "packageRules": [
     {
       "matchPackagePatterns": ["[\\w\\/]+imLib$"],
-      "versioning": "(?<major>\\d+).(?<minor>\\d+).(?<patch>\\d+).(?<build>\\d+)",
+      "versioning": "regex:(?<major>\\d+).(?<minor>\\d+).(?<patch>\\d+).(?<build>\\d+)",
       "automerge": true,
       "platformAutomerge": true,
       "stabilityDays": 0,
