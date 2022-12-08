@@ -13,8 +13,8 @@
       ],
       "datasourceTemplate": "github-tags",
       "extractVersionTemplate": "nuget",
-      "packageNameTemplate": "wcchou/imLib",
-      "depNameTemplate": "https://github.com/wcchou/imLib"
+      "packageNameTemplate": "{{{depName}}}",
+      "depNameTemplate": "https://github.com/{{{depName}}}"
     }
   ],
   "packageRules": [
