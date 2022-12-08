@@ -9,7 +9,7 @@
         "^client-module\\.json$"
       ],
       "matchStrings": [
-        "(?<currentValue>\\d+.\\d+.\\d+.\\d+)"
+       "\"([\\w]+)\":[\\s\\w\\{]+\"version\":[\\s\"]+(?<currentValue>\\d+.\\d+.\\d+.\\d+)\",\\s+\"path\":\\s+\"(?<depName>[\\w\\/]+)\"" 
       ],
       "datasourceTemplate": "github-tags",
       "extractVersionTemplate": "nuget",
