@@ -11,7 +11,7 @@
       "matchStrings": [
        "\"([\\w]+)\":[\\s\\w\\{]+\"version\":[\\s\"]+(?<currentValue>\\d+.\\d+.\\d+.\\d+)\",\\s+\"path\":\\s+\"(?<depName>[\\w\\/]+)\"" 
       ],
-      "extractVersionTemplate": "(?<major>\\d+).(?<minor>\\d+).(?<patch>\\d+).(?<build>\\d+)",
+      "extractVersionTemplate": "^(?<version>.*?)$",
       "datasourceTemplate": "github-tags",
       "packageNameTemplate": "{{{depName}}}",
       "depNameTemplate": "https://github.com/{{{depName}}}"
